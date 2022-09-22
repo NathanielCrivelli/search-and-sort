@@ -15,7 +15,12 @@ public class Sequential
    */
   public static int search(int[] arr, int target) {
     // Your algorithm goes here!
-    
+    int psn = 0;
+    if (psn > -1)
+    {
+        
+        psn += 1;
+    }
   }
   
   public static void main(String[] args) {
