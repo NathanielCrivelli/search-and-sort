@@ -13,13 +13,17 @@ public class Sequential
   /**
    * Returns the index of the target value, or -1 if not found
    */
-  public static int search(int[] arr, int target) {
+  public static int search(int[] arr, int target) { /** pirate */
     // Your algorithm goes here!
     int psn = 0;
+    Scanner input = new Scanner(System.in);
     if (psn > -1)
     {
-        
-        psn += 1;
+
+      psn += 1;
+    } else {
+
+      psn = -1;
     }
   }
   
