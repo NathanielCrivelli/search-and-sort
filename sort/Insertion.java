@@ -15,7 +15,7 @@ public class Insertion
   /**
    * Returns the sorted array
    */
-  //Make insertion sort
+
   public static int[] sort(int[] arr) {
     // Your algorithm goes here!
     for (int i = 1; i < arr.length; i++) {
@@ -48,8 +48,8 @@ public class Insertion
       }
     }
     //return sorted array
-    System.out.println(Arrays.toString(arr));
-    System.out.println("SUCCESS!");
+  System.out.println(Arrays.toString(arr));
+  System.out.println("SUCCESS!");
   }
 
 }

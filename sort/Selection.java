@@ -16,7 +16,23 @@ public class Selection
    */
   public static int[] sort(int[] arr) {
     // Your algorithm goes here!
-    
+    //selection sort
+
+
+    for (int i = 1; i < arr.length; i++) {
+      int min = i;
+      for (int j = i; j < arr.length; j++) {
+        if (arr(j) <arr(min)) {
+          min = j;
+        }
+        int temp = arr[j];
+        arr[j] = arr[j - 1];
+        arr[j - 1] = temp;
+        j--;
+      }
+    }
+  }
+    return arr;
   }
   
   public static void main(String[] args) {
@@ -36,6 +52,7 @@ public class Selection
         return;
       }
     }
+    System.out.println(Arrays.toString(arr));
     System.out.println("SUCCESS!");
   }
 
