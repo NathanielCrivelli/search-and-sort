@@ -17,7 +17,7 @@ public class Selection
   public static int[] sort(int[] arr) {
     // Your algorithm goes here!
     //selection sort
-
+ 
 
     for (int i = 1; i < arr.length; i++) {
       int min = i;
@@ -25,9 +25,10 @@ public class Selection
         if (arr(j) <arr(min)) {
           min = j;
         }
-        int temp = arr[j];
-        arr[j] = arr[j - 1];
-        arr[j - 1] = temp;
+      }
+        int temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
         j--;
       }
     }
