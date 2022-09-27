@@ -16,9 +16,18 @@ public class Merge
    */
   public static int[] sort(int[] arr) {
     // Your algorithm goes here!
-    //merge sort 
-    
-
+    for (int i = 1; i < arr.length; i++) {
+      int min = i;
+      for (int j = i; j < arr.length; j++) {
+        if (arr(j) <arr(min)) {
+          min = j;
+        }
+      }
+        int temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+        j--;
+      }
   }
   
   public static void main(String[] args) {
