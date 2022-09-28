@@ -1,5 +1,7 @@
 package search;
+//hi nate
 
+import java.util.Scanner;
 
 /**
  * Write a description of class SequentialSearch here.
@@ -15,18 +17,19 @@ public class Sequential
    */
   public static int search(int[] arr, int target) { /** pirate */
     // Your algorithm goes here!
-    int psn = 0;
-    Scanner input = new Scanner(System.in);
-    if (psn > -1)
-    {
-
-      psn += 1;
-    } else {
-
-      psn = -1;
     }
-  }
-  
+Scanner input = new Scanner(System.in);
+    int num = input.nextInt();
+    for (int x = 0; x < arr.length; x++){
+      if (arr[x] == num){
+        System.out.println("the number is in the array at "+ num +".");
+      } else {    
+        System.out.println("The number is not in the array.");
+      }
+
+    }
+    return num;
+  } 
   public static void main(String[] args) {
     int[] arr = {53,85,93,25,39,27,42,5,24,45,33,51,5,80,4,7,91,
       31,66,71,32,19,79,58,61,82,89,63,7,4,50,10,48,24,75,19,22,

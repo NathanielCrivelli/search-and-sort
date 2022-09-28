@@ -16,19 +16,12 @@ public class Merge
    */
   public static int[] sort(int[] arr) {
     // Your algorithm goes here!
-    for (int i = 1; i < arr.length; i++) {
-      int min = i;
-      for (int j = i; j < arr.length; j++) {
-        if (arr(j) <arr(min)) {
-          min = j;
+    int N = arr.length;
+        if(int N = arr.length; N <= 1) {
+            System.out.println(arr);
         }
-      }
-        int temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
-        j--;
-      }
-  }
+        return arr;
+    }
   
   public static void main(String[] args) {
     int[] arr = {53,85,93,25,39,27,42,5,24,45,33,51,5,80,4,7,91,
