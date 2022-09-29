@@ -17,8 +17,19 @@ public class Merge
   public static int[] sort(int[] arr) {
     // Your algorithm goes here!
     int N = arr.length;
-        if(int N = arr.length; N <= 1) {
-            System.out.println(arr);
+        for(N = arr.length; N <= 1; N = N/2) {
+          int middle = N/2;
+          int leftLength = middle;
+          int rightLength = N - leftLength;
+          int index = 0;
+            if(index < middle) {
+              index++;
+            } else {
+              index = middle;
+            }
+            if(index < N) {
+              
+            }
         }
         return arr;
     }
