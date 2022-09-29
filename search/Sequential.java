@@ -12,21 +12,22 @@ import java.util.ArrayList;
  */
 public class Sequential
 {
-  
+  Scanner scanNextLine = new Scanner(System.in);
+    int target = scanNextLine.nextInt();
   /**
    * Returns the index of the target value, or -1 if not found
    */
   public static int search(int[] arr, int target) { /** pirate */
-    Scanner scanNextLine = new Scanner(System.in);
-    int num = scanNextLine.nextInt();
-      for(int i = 0; i < arr.length; i++)
+    int size = arr.length;
+      for(int i = 0; i < size; i++)
     {
-        if(num.equals(arr))
+        if(target == (arr[i]))
         {
-            System.out.println(arr[i]);
+            return arr[i];
         }
     }
-  }
+    return -1;
+    }
   
   public static void main(String[] args) {
     int[] arr = {53,85,93,25,39,27,42,5,24,45,33,51,5,80,4,7,91,
