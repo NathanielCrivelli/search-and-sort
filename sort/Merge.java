@@ -15,7 +15,6 @@ public class Merge
    * Returns the sorted array
    */
   public static int[] sort(int[] arr) {
-    // Your algorithm goes here!
     int N = arr.length;
         for(N = arr.length; N <= 1; N = N/2) {
           int middle = N/2;
