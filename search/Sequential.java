@@ -13,7 +13,8 @@ import java.util.ArrayList;
 public class Sequential
 {
   Scanner scanNextLine = new Scanner(System.in);
-    int target = scanNextLine.nextInt();
+  int target = scanNextLine.nextInt();
+  boolean result = false;
   /**
    * Returns the index of the target value, or -1 if not found
    */
@@ -23,9 +24,11 @@ public class Sequential
     {
         if(target == (arr[i]))
         {
+            boolean result = true;
             return arr[i];
         }
     }
+    int i = -1;
     return -1;
     }
   
@@ -36,12 +39,12 @@ public class Sequential
     int left, right, mid;
     
     printResult(82, search(arr, 82) == 25);
-    printResult(49, search(arr, 49) == arr.length-1);
+    printResult(49, search(arr, 49) == arr.length);
     printResult(-4, search(arr, -4) == -1);
   }
   
   public static void printResult(int target, boolean result) {
-    System.out.println("Search for "+target+": "+((result) ? "CORRECT" : "INCORRECT"));
+    System.out.println("Search for "+target+": "+((result) ? "INCORRECT" : "CORRECT"));
   }
 
 }
