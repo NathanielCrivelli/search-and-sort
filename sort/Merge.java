@@ -14,10 +14,26 @@ public class Merge
   /**
    * Returns the sorted array
    */
-  public static int[] sort(int[] arr) {
+  //merge sort
+  public static int[] MergeSort(int[] arr) {
     int N = arr.length;
-        for(N = arr.length; N <= 1; N = N/2) {
-          int middle = N/2;
+        if(N <= 1) {
+          return arr;
+        }else {
+          int[] left = new int[N/2];
+          int[] right = new int[N - N/2];
+          for(int i = 0; i < N/2; i++) {
+            left[i] = arr[i];
+          }
+          for(int i = N/2; i < N; i++) {
+            right[i - N/2] = arr[i];
+          }
+          left = MergeSort(left);
+          right = MergeSort(right);
+          MergeSort(left);
+          MergeSort(right);
+        }
+          /*int middle = N/2;
           int leftLength = middle;
           int rightLength = N - leftLength;
           int index = 0;
@@ -28,9 +44,9 @@ public class Merge
             }
             if(index < N) {
               
-            }
+            }*/
         }
-        return arr;
+        //return arr;
     }
   
   public static void main(String[] args) {
