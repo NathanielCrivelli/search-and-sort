@@ -8,8 +8,7 @@ package search;
  */
 public class Binary
 {
-  int low = 0;
-  high = lenght-1;
+  
   /**
    * Returns the index of the target value, or -1 if not found
    */
@@ -18,13 +17,20 @@ public class Binary
     // Note... I know that the standard Java Arrays class has a method called
     // binarySearch.  If you use it for testing, but you need to implement the algorithm
     // to get the point!
-    if(low <= high){
-        mid = (low+high)/2;
-        
-    } else {
-        return -1;
+    int low = 0;
+    int high = arr.length;
+    for(int i = 0; i < arr.length; i++){  
+        if(low <= high){
+            int mid = (low+high)/2;
+            if (mid == target){
+                return i;
+            } else {
+                high = mid-1;
+            }
+        }
     }
-  }
+    return -1;
+    }
   
   public static void main(String[] args) {
     int[] arr = {53,85,93,25,39,27,42,5,24,45,33,51,5,80,4,7,91,
